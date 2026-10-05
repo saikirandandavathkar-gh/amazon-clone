@@ -1,0 +1,235 @@
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #111;
+    min-height: 100vh;
+}
+
+/* =====================================================
+   SIGNUP CONTAINER
+===================================================== */
+
+.signup-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.signup-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* =====================================================
+   SIGNUP BOX
+===================================================== */
+
+.signup-box {
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.signup-box h2 {
+    margin-bottom: 18px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #111;
+}
+
+/* =====================================================
+   FORM
+===================================================== */
+
+#signupForm {
+    width: 100%;
+}
+
+/* =====================================================
+   INPUTS
+===================================================== */
+
+.signup-box input {
+    width: 100%;
+    height: 42px;
+    padding: 10px 12px;
+    margin-bottom: 6px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    color: #111;
+    background: #fff;
+}
+
+/* =====================================================
+   INPUT FOCUS
+===================================================== */
+
+.signup-box input:focus {
+    border-color: #007185;
+    box-shadow: 0 0 0 2px rgba(0, 113, 133, 0.15);
+}
+
+/* =====================================================
+   INPUT ERROR
+===================================================== */
+
+.input-error {
+    border: 1px solid #d93025 !important;
+    background: #fff8f7 !important;
+}
+
+/* =====================================================
+   ERROR MESSAGE
+===================================================== */
+
+.error-message {
+    display: none;
+    margin: 0 0 9px;
+    color: #d93025;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* =====================================================
+   CREATE ACCOUNT BUTTON
+===================================================== */
+
+.signup-box button {
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+    margin-top: 7px;
+    background: #ffd814;
+    border: 1px solid #a88734;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #111;
+    transition: background 0.2s ease;
+}
+
+.signup-box button:hover {
+    background: #f7ca00;
+}
+
+.signup-box button:active {
+    transform: scale(0.99);
+}
+
+/* =====================================================
+   HORIZONTAL LINE
+===================================================== */
+
+.signup-box hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+/* =====================================================
+   EXISTING ACCOUNT
+===================================================== */
+
+.existing-account {
+    margin-top: 0;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.existing-account a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.existing-account a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .signup-container {
+        padding: 20px 12px;
+    }
+
+    .signup-box {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .signup-box h2 {
+        font-size: 24px;
+    }
+}
+
+
+.mobile-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.mobile-container select {
+    width: 105px;
+    height: 42px;
+    padding: 10px 6px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    background: #fff;
+    font-size: 13px;
+    color: #111;
+}
+
+.mobile-container select:focus {
+    border-color: #007185;
+    box-shadow: 0 0 0 2px rgba(0, 113, 133, 0.15);
+    z-index: 1;
+}
+
+.mobile-container input {
+    flex: 1;
+    margin-bottom: 0 !important;
+    border-radius: 0 4px 4px 0 !important;
+}

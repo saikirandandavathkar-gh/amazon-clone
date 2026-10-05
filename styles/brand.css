@@ -1,0 +1,370 @@
+/* brand.css */
+
+/* Samsung product list */
+
+#samsungList {
+    width: 100%;
+}
+
+
+/* PRODUCT CARD */
+
+.samsung-product-card {
+    display: flex;
+
+    width: 92%;
+
+    margin: 16px auto;
+    padding: 20px;
+
+    background: #fff;
+
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    transition: box-shadow 0.2s ease;
+}
+
+
+.samsung-product-card:hover {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+}
+
+
+/* LEFT IMAGE AREA */
+
+.product-image-section {
+    width: 180px;
+    min-width: 180px;
+
+    height: 240px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fafafa;
+
+    border-radius: 8px;
+}
+
+
+/* SMALL PHONE IMAGE */
+
+.samsung-product-image {
+    width: 120px;
+    height: 190px;
+
+    object-fit: contain;
+
+    transition: transform 0.2s ease;
+}
+
+
+.samsung-product-image:hover {
+    transform: scale(1.04);
+}
+
+
+/* RIGHT DETAILS */
+
+.product-details-section {
+    flex: 1;
+
+    padding-left: 28px;
+
+    min-width: 0;
+}
+
+
+/* TITLE */
+
+.product-title-link {
+    text-decoration: none;
+    color: #222;
+}
+
+
+.product-title {
+    margin: 0 0 8px;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+.product-title-link:hover {
+    color: #007185;
+}
+
+
+/* RATING */
+
+.rating {
+    margin: 5px 0;
+
+    color: #007185;
+
+    font-size: 14px;
+}
+
+
+.rating span {
+    color: #555;
+}
+
+
+/* BOUGHT */
+
+.bought {
+    margin: 6px 0;
+
+    color: #666;
+
+    font-size: 13px;
+}
+
+
+/* PRICE */
+
+.price-section {
+    margin: 12px 0;
+}
+
+
+.deal-price {
+    color: #b12704;
+
+    font-size: 26px;
+    font-weight: 600;
+
+    margin-right: 12px;
+}
+
+
+.mrp {
+    color: #666;
+
+    font-size: 13px;
+}
+
+
+.old-price {
+    text-decoration: line-through;
+}
+
+
+/* DELIVERY */
+
+.delivery {
+    margin: 5px 0;
+
+    color: #007600;
+
+    font-size: 14px;
+}
+
+
+/* FEATURES */
+
+.product-details-section h3 {
+    margin: 12px 0 6px;
+
+    font-size: 16px;
+}
+
+
+.features {
+    margin: 0;
+
+    padding-left: 18px;
+}
+
+
+.features li {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+
+    color: #333;
+}
+
+
+/* BUTTONS */
+
+.product-actions {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+
+.add-cart-btn,
+.buy-now-btn {
+    padding: 9px 20px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+.add-cart-btn {
+    background: #ffd814;
+}
+
+
+.add-cart-btn:hover {
+    background: #f7ca00;
+}
+
+
+.buy-now-btn {
+    background: #ffa41c;
+}
+
+
+.buy-now-btn:hover {
+    background: #fa8900;
+}
+
+
+.not-found {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.not-found h2 {
+    margin-bottom: 10px;
+}
+
+.not-found p {
+    margin-bottom: 15px;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffd814;
+    color: #111;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.home-btn:hover {
+    background: #f7ca00;
+}
+
+#pageTitle {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    #pageTitle {
+        margin-top: 70px;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .samsung-product-card {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 12px auto;
+        padding: 12px;
+    }
+
+    .product-image-section {
+        width: 100%;
+        min-width: 0;
+        height: 220px;
+    }
+
+    .samsung-product-image {
+        width: 140px;
+        height: 190px;
+    }
+
+    .product-details-section {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 15px;
+        box-sizing: border-box;
+    }
+
+    .product-title {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .rating {
+        font-size: 13px;
+    }
+
+    .bought {
+        font-size: 12px;
+    }
+
+    .price-section {
+        margin: 10px 0;
+    }
+
+    .deal-price {
+        font-size: 23px;
+    }
+
+    .mrp {
+        font-size: 12px;
+    }
+
+    .delivery {
+        font-size: 13px;
+    }
+
+    .product-details-section h3 {
+        margin: 10px 0 5px;
+        font-size: 15px;
+    }
+
+    .features {
+        padding-left: 18px;
+    }
+
+    .features li {
+        margin-bottom: 4px;
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+    .product-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+    }
+
+    .add-cart-btn,
+    .buy-now-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}

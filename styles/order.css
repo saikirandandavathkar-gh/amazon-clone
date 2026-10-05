@@ -1,0 +1,633 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+}
+
+
+/* =====================================================
+   ORDERS PAGE
+===================================================== */
+
+
+
+.orders-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto 30px;
+}
+
+.orders-page h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   ORDERS LIST
+===================================================== */
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* =====================================================
+   ORDER CARD
+===================================================== */
+
+.order-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+
+/* =====================================================
+   ORDER HEADER
+===================================================== */
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f7f7;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.order-id {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.order-date {
+    color: #555;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   ORDER CONTENT
+===================================================== */
+
+.order-content {
+    display: flex;
+    gap: 25px;
+}
+
+
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
+
+.order-image {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.order-image img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.order-image img:hover {
+    transform: scale(1.04);
+}
+
+
+/* =====================================================
+   ORDER DETAILS
+===================================================== */
+
+.order-details {
+    flex: 1;
+}
+
+.order-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.order-title a {
+    text-decoration: none;
+    color: #222;
+}
+
+.order-title a:hover {
+    color: #007185;
+    text-decoration: none;
+}
+
+.order-rating {
+    margin-bottom: 10px;
+}
+
+.order-price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+/* =====================================================
+   ORDER STATUS
+===================================================== */
+
+.order-status {
+    color: #067d62;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.cancelled-status {
+    color: #d32f2f;
+}
+
+
+/* =====================================================
+   DELIVERY DATE
+===================================================== */
+
+.delivery-date {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+
+/* =====================================================
+   TRACKING
+===================================================== */
+
+.tracking {
+    margin-top: 25px;
+}
+
+.tracking-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tracking-line {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.tracking-step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.tracking-dot {
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+.tracking-step.completed .tracking-dot {
+    background: #067d62;
+}
+
+.tracking-label {
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   CANCELLED TRACKING
+===================================================== */
+
+.cancelled-tracking {
+    padding: 15px;
+    background: #fff4f4;
+    border: 1px solid #f0caca;
+    border-radius: 5px;
+}
+
+.cancelled-tracking .tracking-title {
+    margin-bottom: 8px;
+    color: #d32f2f;
+}
+
+.cancelled-tracking-message {
+    color: #555;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   CANCELLATION INFORMATION
+===================================================== */
+
+.cancellation-info {
+    margin: 15px 0;
+    padding: 12px 15px;
+    background: #fff4f4;
+    border: 1px solid #f0caca;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+.cancellation-title {
+    color: #111;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cancellation-info p {
+    color: #555;
+    margin: 0;
+    word-break: break-word;
+}
+
+
+/* =====================================================
+   DELIVERY ADDRESS
+===================================================== */
+
+.delivery-address {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    line-height: 1.6;
+}
+
+.delivery-address strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.delivery-address p {
+    margin: 2px 0;
+}
+
+
+/* =====================================================
+   PAYMENT
+===================================================== */
+
+.payment-info {
+    margin-top: 15px;
+}
+
+
+/* =====================================================
+   ORDER ACTIONS
+===================================================== */
+
+.order-actions {
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   CANCEL ORDER BUTTON
+===================================================== */
+
+.cancel-order-btn {
+    padding: 9px 18px;
+    border: 1px solid #d32f2f;
+    border-radius: 4px;
+    background: #fff;
+    color: #d32f2f;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cancel-order-btn:hover {
+    background: #d32f2f;
+    color: #fff;
+}
+
+
+/* =====================================================
+   CANCELLED BUTTON
+===================================================== */
+
+.cancelled-order-btn {
+    width: 110px;
+    height: 36px;
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+    background: #e7e7e7;
+    color: #777;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+
+/* =====================================================
+   EMPTY ORDERS
+===================================================== */
+
+.empty-orders {
+    text-align: center;
+    padding: 70px 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.empty-orders h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.empty-orders p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   CONTINUE SHOPPING
+===================================================== */
+
+.continue-shopping-btn {
+    display: inline-block;
+    padding: 11px 24px;
+    background: #ff9900;
+    color: #111;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.continue-shopping-btn:hover {
+    background: #e68a00;
+}
+
+
+/* =====================================================
+   CANCEL DIALOG OVERLAY
+===================================================== */
+
+.cancel-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 10000;
+}
+
+
+/* =====================================================
+   CANCEL DIALOG
+===================================================== */
+
+.cancel-dialog {
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.cancel-dialog h2 {
+    margin-bottom: 10px;
+}
+
+.cancel-dialog > p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+
+/* =====================================================
+   CANCEL REASONS
+===================================================== */
+
+.cancel-reasons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cancel-reasons label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancel-reasons label:hover {
+    background: #f7f7f7;
+}
+
+.cancel-reasons input {
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   OTHER REASON
+===================================================== */
+
+.other-reason-container {
+    display: none;
+    margin-top: 15px;
+}
+
+.other-reason-container label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.other-reason-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.other-reason-container textarea:focus {
+    border-color: #ff9900;
+}
+
+
+/* =====================================================
+   CANCEL ERROR
+===================================================== */
+
+.cancel-reason-error {
+    min-height: 20px;
+    margin-top: 10px;
+    color: #d32f2f !important;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   CANCEL DIALOG ACTIONS
+===================================================== */
+
+.cancel-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cancel-dialog-back,
+.confirm-cancel-btn {
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   KEEP ORDER
+===================================================== */
+
+.cancel-dialog-back {
+    border: 1px solid #aaa;
+    background: #fff;
+    color: #111;
+}
+
+.cancel-dialog-back:hover {
+    background: #f2f2f2;
+}
+
+
+/* =====================================================
+   CONFIRM CANCEL
+===================================================== */
+
+.confirm-cancel-btn {
+    border: none;
+    background: #d32f2f;
+    color: #fff;
+}
+
+.confirm-cancel-btn:hover {
+    background: #b71c1c;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .orders-page {
+        width: 94%;
+    }
+
+    .order-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .order-content {
+        flex-direction: column;
+    }
+
+    .order-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .order-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .tracking-line {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .tracking-step {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-align: left;
+    }
+
+    .tracking-dot {
+        margin: 0;
+        flex-shrink: 0;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 500px) {
+
+    .cancel-dialog {
+        padding: 20px;
+    }
+
+    .cancel-dialog-actions {
+        flex-direction: column;
+    }
+
+    .cancel-dialog-back,
+    .confirm-cancel-btn {
+        width: 100%;
+    }
+}
+
+.character-limit {
+    display: block;
+    margin-top: 5px;
+    color: #777;
+    font-size: 12px;
+}
+
+.other-reason-container textarea {
+    resize: none;
+}

@@ -1,0 +1,248 @@
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #111;
+    min-height: 100vh;
+}
+
+/* =====================================================
+   LOGIN CONTAINER
+===================================================== */
+
+.login-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.login-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* =====================================================
+   LOGIN BOX
+===================================================== */
+
+.login-box {
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.login-box h2 {
+    margin-bottom: 18px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #111;
+}
+
+/* =====================================================
+   FORM
+===================================================== */
+
+#loginForm {
+    width: 100%;
+}
+
+/* =====================================================
+   INPUTS
+===================================================== */
+
+.login-box input {
+    width: 100%;
+    height: 42px;
+    padding: 10px 12px;
+    margin-bottom: 6px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    color: #111;
+    background: #fff;
+}
+
+/* =====================================================
+   INPUT FOCUS
+===================================================== */
+
+.login-box input:focus {
+    border-color: #007185;
+    box-shadow: 0 0 0 2px rgba(0, 113, 133, 0.15);
+}
+
+/* =====================================================
+   INPUT ERROR
+===================================================== */
+
+.input-error {
+    border: 1px solid #d93025 !important;
+    background: #fff8f7 !important;
+}
+
+/* =====================================================
+   ERROR MESSAGE
+===================================================== */
+
+.error-message {
+    display: none;
+    margin: 0 0 9px;
+    color: #d93025;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* =====================================================
+   SIGN IN BUTTON
+===================================================== */
+
+.login-box button {
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+    margin-top: 7px;
+    background: #ffd814;
+    border: 1px solid #a88734;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #111;
+    transition: background 0.2s ease;
+}
+
+.login-box button:hover {
+    background: #f7ca00;
+}
+
+.login-box button:active {
+    transform: scale(0.99);
+}
+
+/* =====================================================
+   FORGOT PASSWORD
+===================================================== */
+
+.forgot {
+    margin-top: 14px;
+    font-size: 13px;
+    text-align: left;
+}
+
+.forgot a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================================
+   HORIZONTAL LINE
+===================================================== */
+
+.login-box hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+/* =====================================================
+   NEW ACCOUNT
+===================================================== */
+
+.new-account {
+    margin-top: 0;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.new-account a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.new-account a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px 12px;
+    }
+
+    .login-box {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .login-box h2 {
+        font-size: 24px;
+    }
+}
+
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 42px;
+}
+
+.password-eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+    font-size: 16px;
+}
+
+.password-eye:hover {
+    color: #111;
+}
+
